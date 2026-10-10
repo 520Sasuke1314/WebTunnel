@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网页隧道 · 示例页面</title>
+    <style>
+        :root { color-scheme: light; }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            padding: 22px; background: #f5f7fc; color: #141b2d;
+            font: 15px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+        }
+        .card {
+            width: 100%; max-width: 560px; background: #fff; border-radius: 26px;
+            padding: 30px 28px; border: 1px solid #e7eaf3; box-shadow: 0 16px 40px rgba(24, 52, 120, .10);
+        }
+        .badge {
+            display: inline-block; padding: 5px 12px; border-radius: 999px;
+            background: #edf1ff; color: #3b5bdb; font-size: 12px; font-weight: 600; letter-spacing: .3px;
+        }
+        h1 { font-size: 23px; margin: 16px 0 8px; }
+        p { margin: 0 0 14px; color: #5c6478; }
+        ul { margin: 0 0 18px; padding-left: 20px; color: #5c6478; }
+        li { margin: 6px 0; }
+        code { background: #f1f3f9; border-radius: 6px; padding: 2px 6px; font-size: 13px; color: #3b5bdb; }
+        .tip { background: #f8faff; border: 1px dashed #d7e0ff; border-radius: 16px; padding: 14px 16px; color: #5c6478; font-size: 13px; }
+        .foot { margin-top: 18px; color: #98a0b3; font-size: 12px; text-align: center; }
+        button {
+            border: 0; border-radius: 14px; padding: 10px 18px; background: #3b5bdb; color: #fff;
+            font-size: 14px; font-weight: 600; cursor: pointer; transition: transform .15s ease, background .15s ease;
+        }
+        button:active { transform: scale(.96); background: #2547c4; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <span class="badge">Pinggy 隧道已就绪</span>
+    <h1>你的网页已经发布到公网 🎉</h1>
+    <p>如果你是从另一台设备打开这个地址，说明「网页隧道」工作正常：手机上的本地 HTTP 服务，已经通过 Pinggy 的 SSH 反向隧道映射成了公网 URL。</p>
+    <ul>
+        <li>把网页文件放进手机任意目录，在本应用里选「本地文件夹」即可整站发布；</li>
+        <li>也可以选「本地文件」发布单个 HTML，或者直接在「HTML 代码」里粘贴源码；</li>
+        <li>「转发 URL」模式可以把已在运行的服务（例如 <code>http://127.0.0.1:9000</code>）反代到公网。</li>
+    </ul>
+    <p><button onclick="document.getElementById('t').textContent = new Date().toLocaleString()">点我：显示当前时间</button></p>
+    <div class="tip">当前页面时间：<span id="t">未点击</span><br>
+        本页面由手机本地生成，修改文件后刷新即可看到最新内容（HTML 不会被缓存）。</div>
+    <p class="foot">网页隧道 WebTunnel · 作者 Gnuning · QQ 群 1101774655</p>
+</div>
+</body>
+</html>

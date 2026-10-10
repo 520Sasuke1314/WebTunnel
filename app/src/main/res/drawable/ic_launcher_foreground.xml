@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 应用图标前景：一个“把网页发布到公网”的简化图形（浏览器窗口 + 外链箭头） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 窗口外框 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M34,34 h40 a7,7 0 0 1 7,7 v26 a7,7 0 0 1 -7,7 h-40 a7,7 0 0 1 -7,-7 v-26 a7,7 0 0 1 7,-7 z"
+        android:strokeColor="#3B5BDB"
+        android:strokeWidth="4.5" />
+
+    <!-- 顶部工具栏分隔线 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M27,46 H81"
+        android:strokeColor="#3B5BDB"
+        android:strokeAlpha="0.55"
+        android:strokeWidth="3" />
+
+    <!-- 两个窗口圆点 -->
+    <path
+        android:fillColor="#3B5BDB"
+        android:pathData="M33,40 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+    <path
+        android:fillColor="#3B5BDB"
+        android:pathData="M39,40 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+
+    <!-- 页面内容示意 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M34,55 H62"
+        android:strokeColor="#3B5BDB"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M34,64 H54"
+        android:strokeColor="#3B5BDB"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+
+    <!-- 外链箭头 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M58,78 L78,58"
+        android:strokeColor="#3B5BDB"
+        android:strokeLineCap="round"
+        android:strokeWidth="5" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M66,58 L78,58 L78,70"
+        android:strokeColor="#3B5BDB"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="5" />
+</vector>
